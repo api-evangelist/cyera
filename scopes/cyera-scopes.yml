@@ -1,0 +1,33 @@
+generated: '2026-07-18'
+method: searched
+source: https://auth.cyera.io/.well-known/openid-configuration
+docs: https://support.cyera.io/hc/en-us
+schemes:
+- name: OAuth2
+  source: https://auth.cyera.io/.well-known/openid-configuration
+  flows:
+  - flow: clientCredentials
+    tokenUrl: https://auth.cyera.io/oauth/token
+  - flow: authorizationCode
+    authorizationUrl: https://auth.cyera.io/oauth/authorize
+    tokenUrl: https://auth.cyera.io/oauth/token
+scopes:
+- scope: openid
+  description: OpenID Connect authentication; issue an ID token.
+  flows: [clientCredentials, authorizationCode]
+  sources: [https://auth.cyera.io/.well-known/openid-configuration]
+- scope: profile
+  description: Access to the authenticated principal's basic profile claims.
+  flows: [clientCredentials, authorizationCode]
+  sources: [https://auth.cyera.io/.well-known/openid-configuration]
+- scope: email
+  description: Access to the authenticated principal's email claim.
+  flows: [clientCredentials, authorizationCode]
+  sources: [https://auth.cyera.io/.well-known/openid-configuration]
+notes: >-
+  Only the OIDC-standard scopes (openid, profile, email) are advertised by the
+  authorization server's discovery document. Fine-grained data-access
+  authorization in Cyera is enforced by tenant/role rather than by additional
+  OAuth scopes advertised at the discovery endpoint; the API's resource-level
+  permission reference is behind the authenticated developer portal
+  (api.cyera.io/docs).

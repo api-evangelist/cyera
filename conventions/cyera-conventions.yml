@@ -1,0 +1,42 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://auth.cyera.io/.well-known/openid-configuration ;
+  vendor integration docs (Atlan, Axonius, Swimlane, BlinkOps, Query.ai)
+authentication:
+  style: oauth2-bearer-jwt
+  detail: >-
+    OAuth 2.0 client_credentials (Client ID + Client Secret) exchanged at
+    auth.cyera.io/oauth/token for a short-lived JWT; sent as
+    `Authorization: Bearer <jwt>`. A `/v1/login` convenience endpoint accepts the
+    Client ID + Client Secret and returns the same JWT.
+  reference: authentication/cyera-authentication.yml
+base_urls:
+  default: https://api.cyera.io
+  regional:
+  - region: EU
+    base_url: https://api-eu.cyera.io
+versioning:
+  style: uri-path
+  observed: [v1, v3]
+  reference: lifecycle/cyera-lifecycle.yml
+idempotency:
+  supported: unknown
+  detail: No idempotency-key contract documented on the public surface.
+pagination:
+  style: unknown
+  detail: Not documented publicly (developer portal is authenticated).
+error_envelope:
+  style: unknown
+  detail: >-
+    The public api.cyera.io edge returns JSON errors of shape
+    {"message": "...", "error": "...", "statusCode": N} for unmatched routes;
+    the documented API error envelope is behind the authenticated portal.
+rate_limiting:
+  signaled: unknown
+notes: >-
+  Cross-cutting semantics captured from the public authorization surface and
+  third-party integration docs; the full request/response conventions live
+  behind Cyera's authenticated developer portal (api.cyera.io/docs). No
+  idempotency, pagination, or rate-limit contract is published publicly, so no
+  Idempotency pointer is emitted (avoiding fabrication).

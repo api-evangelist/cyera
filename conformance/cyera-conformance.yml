@@ -1,0 +1,45 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://auth.cyera.io/.well-known/openid-configuration ;
+  https://security.cyera.io/
+standards:
+- id: oauth2
+  conforms: true
+  evidence: authorization server advertises oauth2 token endpoint and grants (client_credentials, authorization_code, refresh_token, token-exchange, device_code)
+- id: oidc
+  conforms: true
+  evidence: /.well-known/openid-configuration present with issuer, jwks_uri, userinfo_endpoint, id_token signing (RS256/ES256)
+- id: rfc8414-oauth-authorization-server-metadata
+  conforms: true
+  evidence: /.well-known/oauth-authorization-server returns 200
+- id: oauth2-pkce
+  conforms: true
+  evidence: authorization_code flow issues code_challenge/code_challenge_method=S256
+- id: rfc8628-device-authorization-grant
+  conforms: true
+  evidence: device_authorization_endpoint advertised; device_code grant supported
+- id: rfc8693-token-exchange
+  conforms: true
+  evidence: urn:ietf:params:oauth:grant-type:token-exchange advertised
+- id: soc2
+  conforms: true
+  evidence: SOC 2 listed on Cyera Trust Center (security.cyera.io)
+- id: iso-27001
+  conforms: true
+  evidence: ISO/IEC 27001 (with Statement of Applicability) listed on Trust Center
+- id: pci-dss
+  conforms: true
+  evidence: PCI DSS listed on Trust Center
+- id: hipaa
+  conforms: true
+  evidence: HIPAA listed on Trust Center
+- id: gdpr
+  conforms: true
+  evidence: GDPR + EU-US Data Privacy Framework listed on Trust Center
+- id: bsi-c5
+  conforms: true
+  evidence: C5 (German BSI Cloud Computing Compliance Criteria Catalogue) listed on Trust Center
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: no public OpenAPI available to confirm application/problem+json error envelope

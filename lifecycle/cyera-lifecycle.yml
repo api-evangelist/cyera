@@ -1,0 +1,28 @@
+generated: '2026-07-18'
+method: searched
+source: >-
+  https://status.cyera.io ; https://www.cyera.com/latest-innovations ;
+  vendor integration docs (Atlan, Axonius, Swimlane)
+versioning:
+  scheme: uri-path
+  observed_versions: [v1, v3]
+  docs: https://api.cyera.io/docs
+  notes: >-
+    Cyera exposes versioned REST resources under URI-path versions; integration
+    connectors reference both v1 and v3 endpoints. The full versioning /
+    deprecation policy is behind the authenticated developer portal.
+deprecation:
+  policy_url: null
+  sunset_header: null
+  notes: No public deprecation/sunset policy located.
+status_page: https://status.cyera.io
+status_page_platform: Uptime.com
+sla:
+  url: null
+  uptime_target: null
+regions:
+- name: default / US
+  base_url: https://api.cyera.io
+- name: EU
+  base_url: https://api-eu.cyera.io
+deprecated_operations: []

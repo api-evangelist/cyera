@@ -1,0 +1,37 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: >-
+  https://www.cyera.com/blog/cyera-mcp ;
+  https://www.cyera.com/latest-releases/cyera-mcp ;
+  https://aws.amazon.com/marketplace/pp/prodview-h2s2s5dlngnwc
+server:
+  name: Cyera MCP (DataPort)
+  transport: http
+  hosted: true
+  url: null
+  released: '2026-03-24'
+description: >-
+  Cyera MCP is an official Model Context Protocol server that lets any
+  MCP-compatible AI client (Claude, Cursor, Microsoft Copilot, ChatGPT, custom
+  agents) query Cyera's data-security intelligence in natural language. It sits
+  in front of DataPort — a per-customer managed Snowflake warehouse that stores
+  Cyera's discovery, classification, access-exposure and risk findings in a
+  structured, queryable format. Agents translate natural-language questions into
+  queries against the customer's DataPort dataset and receive structured
+  insights for investigations, reporting, and triage. Cyera DataPort is also
+  listed on the AWS Marketplace (AI Agents & Tools) and documented on the Natoma
+  MCP platform. Exact server URL, transport bindings, and tool schemas are
+  provisioned per customer / demo and are not published publicly.
+capabilities:
+- Query sensitive-data locations and classification insights
+- Follow access paths and analyze exposure risk
+- Retrieve discovery and risk findings for investigations and reporting
+tools: []
+notes: >-
+  Published, first-party hosted MCP server. Tool list left empty rather than
+  fabricated because Cyera does not publish the concrete tool/operation schema
+  publicly (provisioned per DataPort tenant).
+references:
+- https://docs.natoma.ai/apps/cyera-dataport
+- https://www.youtube.com/watch?v=bauxXP6mzZo

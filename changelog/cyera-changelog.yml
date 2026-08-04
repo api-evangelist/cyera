@@ -1,0 +1,50 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.cyera.com/latest-innovations
+scheme: dated-release-notes
+current_version: null
+notes: >-
+  Cyera publishes dated product release notes on its "Latest Innovations /
+  Latest Releases" page (product-level, not a per-endpoint API changelog). The
+  recent window is captured below verbatim from the published dates.
+entries:
+- date: '2026-06-16'
+  title: Omni DLP Memories
+  type: addition
+  highlight: Retains investigation context across users, destinations and organizations to avoid repetitive alert handling.
+- date: '2026-06-16'
+  title: Browser Shield Policy Creation
+  type: addition
+  highlight: Rapid policy development and enforcement for browser-based AI workflows.
+- date: '2026-06-16'
+  title: Remediation Center
+  type: addition
+  highlight: Dedicated workspace for data owners to triage and resolve assigned security issues.
+- date: '2026-06-16'
+  title: Access Trail for Google Workspace
+  type: addition
+  highlight: Access-history tracking for sensitive-data investigations across Google environments.
+- date: '2026-06-16'
+  title: Latest Integrations (June)
+  type: addition
+  highlight: Extended Claude Enterprise integration; added Abnormal Security, Cohesity, Cato Networks, Island, Delinea and others.
+- date: '2026-05-18'
+  title: DLP Trends
+  type: addition
+  highlight: Shifts focus from individual events to recurring exposure patterns and their locations.
+- date: '2026-05-18'
+  title: Data Retention Policies
+  type: addition
+  highlight: Identifies files exceeding retention periods and sensitive data no longer actively used.
+- date: '2026-03-30'
+  title: Cyera Privacy
+  type: addition
+  highlight: Closes the gap between documented compliance and operational reality via automated inventory.
+- date: '2026-03-24'
+  title: Cyera MCP
+  type: addition
+  highlight: Connect any MCP-compatible AI tool to Cyera's DataPort to query sensitive data in natural language.
+- date: '2026-03-24'
+  title: Browser Shield
+  type: addition
+  highlight: Reduces Shadow AI through visibility and control of browser-based tools.

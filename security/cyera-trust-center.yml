@@ -1,0 +1,24 @@
+generated: '2026-07-18'
+method: searched
+probe: true
+url: https://security.cyera.io/
+platform: SafeBase
+certifications:
+- SOC 2
+- ISO/IEC 27001
+- PCI DSS
+- HIPAA
+- GDPR
+- CCPA
+- C5
+- EU-US Data Privacy Framework
+- VPAT
+evidence:
+- source: https://security.cyera.io/
+  keywords: [soc 2, iso 27001, pci dss, hipaa, gdpr, trust center, safebase]
+notes: >-
+  Cyera's Trust Center is hosted on SafeBase at security.cyera.io. It advertises
+  the certifications above; detailed audit reports (e.g. SOC 2 report, ISO 27001
+  Statement of Applicability) are gated behind an NDA/access request. The probe
+  script missed this because the trust center is on the cyera.io domain, not the
+  primary cyera.com marketing domain.

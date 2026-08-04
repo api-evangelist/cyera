@@ -1,0 +1,32 @@
+# Cyera
+
+> Cyera is an AI-native data security company. Its Data Security Posture Management (DSPM) platform discovers, classifies, and secures sensitive data across cloud (AWS, GCP, Azure), SaaS, and on-premises stores using an agentless architecture. Cyera exposes a versioned REST API (api.cyera.io) secured with OAuth 2.0 / JWT, a published Model Context Protocol server (Cyera MCP over DataPort), and a SafeBase trust center.
+
+## APIs
+- [Cyera API](https://api.cyera.io/docs): Versioned REST API (v1/v3) for data discovery, classification, and risk findings. Base URL https://api.cyera.io (EU: https://api-eu.cyera.io).
+
+## Authentication
+- [OpenID configuration](https://auth.cyera.io/.well-known/openid-configuration): OAuth 2.0 / OIDC discovery. Grants: client_credentials, authorization_code (PKCE), refresh_token, device_code, token-exchange.
+- Token endpoint: https://auth.cyera.io/oauth/token
+- Authorization endpoint: https://auth.cyera.io/oauth/authorize
+- Auth model: Client ID + Client Secret -> short-lived JWT bearer token.
+
+## Agent access
+- [Cyera MCP](https://www.cyera.com/blog/cyera-mcp): Model Context Protocol server fronting DataPort (per-tenant Snowflake) for natural-language querying of sensitive-data findings.
+
+## Docs
+- [Support / Docs](https://support.cyera.io/hc/en-us): Help center and product documentation.
+- [Developer portal](https://api.cyera.io/docs): API reference (authenticated).
+- [Latest releases](https://www.cyera.com/latest-innovations): Dated product release notes.
+
+## Security
+- [Trust Center](https://security.cyera.io/): SOC 2, ISO/IEC 27001, PCI DSS, HIPAA, GDPR, C5 (SafeBase).
+- [Vulnerability disclosure](https://www.cyera.com/legal/vulnerability-disclosure): Bugcrowd-based disclosure program.
+- [Status](https://status.cyera.io): Service status page.
+
+## Company
+- [Website](https://www.cyera.com)
+- [Blog](https://www.cyera.com/blog)
+- [Pricing](https://www.cyera.com/pricing)
+- [Terms](https://www.cyera.com/legal/terms)
+- [Privacy](https://www.cyera.com/legal/privacy-policy)
