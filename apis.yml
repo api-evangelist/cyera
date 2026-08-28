@@ -13,6 +13,17 @@ description: >-
   and a SafeBase-powered trust center covering SOC 2, ISO 27001, PCI DSS, HIPAA,
   and GDPR. It was surfaced as a portfolio company of Lightspeed Venture
   Partners and enriched by the API Evangelist pipeline.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
