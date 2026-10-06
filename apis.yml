@@ -44,7 +44,7 @@ x-tier: enriched
 x-tier-reason: portfolio-lead
 specificationVersion: '0.23'
 created: '2026-07-17'
-modified: '2026-07-18'
+modified: '2026-10-06'
 tags:
 - Company
 - Cybersecurity
@@ -84,6 +84,8 @@ apis:
   - type: OAuthScopes
     url: scopes/cyera-scopes.yml
 common:
+- url: https://www.cyera.com/blog/rss.xml
+  type: BlogRSS
 - type: Website
   url: https://www.cyera.com
 - type: DeveloperPortal
