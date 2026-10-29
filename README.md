@@ -64,6 +64,108 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Cyera is a company surfaced as a portfolio company of lightspeed-venture-partners and added to the API Evangelist network as a stub for enrichment. Sector: cybersecurity. This profile is a lead awaiting the enrichment pipeline.
+Cyera is an AI-native data security company whose Data Security Posture Management (DSPM) platform discovers, classifies, and secures sensitive data across cloud service providers (AWS, GCP, Azure), SaaS applications, data warehouses, and on-premises stores using an agentless architecture that scans hundreds of petabytes without impacting performance. Cyera exposes a versioned REST API (api.cyera.io, with an EU region at api-eu.cyera.io) secured with OAuth 2.0 / OpenID Connect and short-lived JWT bearer tokens, a published Model Context Protocol server (Cyera MCP over DataPort, a per-customer managed Snowflake warehouse) for natural-language querying of data-security findings, and a SafeBase-powered trust center covering SOC 2, ISO 27001, PCI DSS, HIPAA, and GDPR. It was surfaced as a portfolio company of Lightspeed Venture Partners and enriched by the API Evangelist pipeline.
 
-Source: portfolio company of [lightspeed-venture-partners](https://github.com/api-evangelist/lightspeed-venture-partners) — https://www.cyera.com
+**Areas:** Company · Cybersecurity · Data Security · DSPM · Data Security Posture Management · Data Classification · Cloud Security · Compliance · MCP · AI Security
+
+## Cyera on APIs.io
+
+Everything profiled for Cyera is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/cyera/](https://apis.io/providers/cyera/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Cyera API](https://apis.io/apis/cyera/cyera-api/) — Versioned REST API (v1 / v3) for programmatic access to Cyera's data discovery, classification, access-exposure, and risk findings. Secured with OAuth 2.0…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [Cyera MCP (DataPort)](https://apis.io/servers/cyera/cyera-mcp-dataport/)
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Cyera Authentication](https://apis.io/security/cyera/cyera-authentication/)
+- [Cyera Domain Security](https://apis.io/security/cyera/cyera-domain-security/)
+- [Cyera Trust Center](https://apis.io/security/cyera/cyera-trust-center/)
+- [Cyera Vulnerability Disclosure](https://apis.io/security/cyera/cyera-vulnerability-disclosure/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Cyera Scopes](https://apis.io/scopes/cyera/cyera-scopes/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.cyera.com)
+- [Documentation](https://support.cyera.io/hc/en-us)
+- [API reference](https://api.cyera.io/docs)
+- [Pricing](https://www.cyera.com/pricing)
+- [Support](https://support.cyera.io/hc/en-us)
+- [Blog](https://www.cyera.com/blog)
+- [Security](https://www.cyera.com/legal/vulnerability-disclosure)
+- [Compliance](https://security.cyera.io/)
+- [Terms of service](https://www.cyera.com/legal/terms)
+- [Privacy policy](https://www.cyera.com/legal/privacy-policy)
+- [Status](https://status.cyera.io)
+
+## API Evangelist rating
+
+**Kin Score 39.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 0.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 45.2 |
+| Access clarity | 53.9 |
+
+**Agent readiness 14.2** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 45.1** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/cyera/](https://apis.io/providers/cyera/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Cyera: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/cyera/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
